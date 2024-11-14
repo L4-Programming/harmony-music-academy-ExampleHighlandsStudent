@@ -4,11 +4,14 @@ let form = document.querySelector("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  console.log("Form submitted");
+  // Store the user's email address as userEmail (string/text)
+  let userEmail = document.querySelector("#email").value;
+  // Store the user's level as userLevel (string/text)
+  let userLevel = document.querySelector("#level").value;
+  // Store the user's hours of study as userHours (number)
+  let userHours = document.querySelector("#hoursPerWeek").value;
+  console.log({ userEmail, userLevel, userHours });
 });
-// Get the user's email address - userEmail (string)
-// Get the user's level - userLevel (string)
-// Get the user's hours of study - userHours (number)
 // Validate the user's input
 // Check if the user has selected a level - check a level has been entered; check against the allowed levels; conditional statement
 // Check if the user has provided an email address - have they entered an email?; is this valid?; does it have an '@' symbol?;
